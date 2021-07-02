@@ -24,5 +24,36 @@ export default{
       method: 'post',
       data: data
     })
+  },
+  // 根据gwid获取dpIds
+  getDpIds(gwId) {
+    return request({
+      url: `/api/operate/getDpIds/${gwId}`,
+      method: 'post'
+    })
+  },
+  // 查询实时数据信息
+  queryRawData(data) {
+    return request({
+      url: `/api/operate/queryRawData`,
+      method: 'post',
+      data: data
+    })
+  },
+  // 获取维保数据信息
+  notificationZScore(data) {
+    return request({
+      url: `/api/operate/notificationZScore`,
+      method: 'post',
+      data: data
+    })
+  },
+  // 获取警告数据信息
+  notificationWarningData(data) {
+    return request({
+      url: `/api/operate/notificationWarningData`,
+      method: 'post',
+      data: data
+    })
   }
 }

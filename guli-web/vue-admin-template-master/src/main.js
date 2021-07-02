@@ -1,5 +1,7 @@
 import Vue from 'vue'
 
+import * as echarts from 'echarts'
+
 import 'normalize.css/normalize.css' // A modern alternative to CSS resets
 
 import ElementUI from 'element-ui'
@@ -18,6 +20,8 @@ import '@/permission' // permission control
 Vue.use(ElementUI, { locale })
 
 Vue.config.productionTip = false
+
+Vue.prototype.$echarts = echarts
 
 new Vue({
   el: '#app',

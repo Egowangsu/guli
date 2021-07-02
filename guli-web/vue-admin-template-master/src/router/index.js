@@ -42,7 +42,7 @@ export const constantRouterMap = [
     component: Layout,
     redirect: '/teacher/table', // 默认跳转到
     name: '讲师管理',
-    meta: { title: '讲师管理', icon: 'example' },
+    meta: { title: '接口数据测试1', icon: 'example' },
     children: [
       {
         path: 'list',
@@ -70,7 +70,7 @@ export const constantRouterMap = [
     component: Layout,
     redirect: '/subject/list', // 默认跳转到
     name: '课程分类管理',
-    meta: { title: '课程分类管理', icon: 'example' },
+    meta: { title: '接口数据测试2', icon: 'example' },
     children: [
       {
         path: 'list',
@@ -92,7 +92,7 @@ export const constantRouterMap = [
     component: Layout,
     redirect: '/course/list', // 默认跳转到
     name: '课程分类管理',
-    meta: { title: '课程列表', icon: 'example' },
+    meta: { title: '接口数据测试3', icon: 'example' },
     children: [
       {
         path: 'list',
@@ -133,14 +133,14 @@ export const constantRouterMap = [
     path: '/testdata',
     component: Layout,
     redirect: '/testdata/table',
-    name: '端口测试',
-    meta: { title: '端口测试', icon: 'example' },
+    name: '接口测试',
+    meta: { title: '接口测试', icon: 'example' },
     children: [
       {
         path: 'table',
         name: 'Table',
         component: () => import('@/views/edu/course/testInterface'),
-        meta: { title: '端口数据测试', icon: 'table' }
+        meta: { title: '接口数据测试4', icon: 'table' }
       }
     ]
   },
